@@ -18,9 +18,9 @@ Actualmente formándome en Ciencia de Datos e IA (Tecnicatura IFTS N.º 18) mien
 |---|---|---|---|
 | **Entrenador de Python** | Practicar Python sin depender de un servidor ni de conexión constante | Motor Python en el navegador (Pyodide), currículo de 14 conceptos con desbloqueo progresivo, examen determinístico, PWA instalable y uso offline | Suite de pruebas en verde al 100 % (91/91 requisitos funcionales, 17/17 no funcionales) |
 | **Entrenador de SQL** — [sql.techcam.com.ar](https://sql.techcam.com.ar) | Llegar seguro a entrevistas técnicas de análisis de datos | App de práctica con repetición espaciada, tutor de IA y entorno MySQL real con 500.000+ filas sintéticas y defectos de datos sembrados a propósito | En producción; entorno de práctica a escala real sin usar datos de ningún cliente |
-| **ESAB — Dashboard de cadena de suministro** | Visibilidad sobre datos de comercio exterior dispersos entre SAP y Ecomex | Pipeline Python/n8n hacia PostgreSQL, modelo en esquema estrella con medidas DAX, dashboard Power BI en producción | Cliente activo desde 2026, con auditorías de calidad de datos recurrentes |
-| **ESAB Stock Online** | Consultar stock obligaba a destinar una PC adicional solo para tener SAP instalado | App propia que consulta el stock sin pasar por una PC con SAP dedicada | En uso activo por el cliente |
-| **ESAB — App de flota** | Carga manual de facturas de reparaciones de la flota | App que registra las facturas fotografiándolas desde el celular | Desplegada en producción (esabtaller.techcam.com.ar) |
+| **Dashboard de cadena de suministro** | Visibilidad sobre datos de comercio exterior dispersos entre SAP y otro sistema de gestión | Pipeline Python/n8n hacia PostgreSQL, modelo en esquema estrella con medidas DAX, dashboard Power BI en producción | Cliente de comercio exterior e industria, activo desde 2026, con auditorías de calidad de datos recurrentes |
+| **App de stock sin depender de SAP** | Consultar stock obligaba a destinar una PC adicional solo para tener SAP instalado | App propia que consulta el stock sin pasar por una PC con SAP dedicada | En uso activo por el cliente |
+| **App de carga de facturas por foto** | Carga manual de facturas de reparaciones de una flota de vehículos | App que registra las facturas fotografiándolas desde el celular | Desplegada en producción para un cliente industrial |
 
 ## Actividad
 
