@@ -22,10 +22,6 @@ Actualmente formándome en Ciencia de Datos e IA (Tecnicatura IFTS N.º 18) mien
 | **App de stock sin depender de SAP** | Consultar stock obligaba a destinar una PC adicional solo para tener SAP instalado | App propia que consulta el stock sin pasar por una PC con SAP dedicada | En uso activo por el cliente |
 | **App de carga de facturas por foto** | Carga manual de facturas de reparaciones de una flota de vehículos | App que registra las facturas fotografiándolas desde el celular | Desplegada en producción para un cliente industrial |
 
-## Actividad
-
-![Stats](https://github-readme-stats.vercel.app/api?username=Darkslidex&show_icons=true&count_private=true&theme=tokyonight)
-
 ## Contacto
 
 [LinkedIn](https://linkedin.com/in/felix-lezama/) · [Portfolio](https://micv.techcam.com.ar)
