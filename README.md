@@ -1,27 +1,50 @@
-# Félix Lezama — Datos, automatización e IA
+# Félix Lezama — Data, Automation & Applied AI
 
-Automatización y dashboards de datos para PyMEs · Python · SQL · Power BI
+**Data Analyst · BI Developer · AI Workflow & Data Automation** — Python, SQL, Power BI, n8n, LLM integrations. Based in Buenos Aires, Argentina · open to 100% remote roles across the Americas.
 
-Actualmente formándome en Ciencia de Datos e IA (Tecnicatura IFTS N.º 18) mientras desarrollo proyectos propios y trabajo con clientes reales.
+I came to data from the field. After years running electronic security operations — CCTV, access control, monitoring centers, B2B contracts — I moved into data analytics and automation. Today I build data pipelines, dashboards and small production systems for a real industrial client and for my own products, under my independent brand **TechCam**. I'm also studying for a degree in Data Science & AI (IFTS N.º 18).
+
+I build with AI coding agents (Claude Code) using spec-driven development: written specs, test-first, documented decisions. I design, review and operate everything I ship.
+
+## What I'm looking for
+
+Remote roles as **Data Analyst / BI Developer / Analytics Engineer** or **AI Workflow & Data Automation Engineer** — full time or B2B contractor.
+
+## Selected work
+
+| Project | Problem | What I built | Result |
+|---|---|---|---|
+| **Supply chain data pipeline & dashboard** (industrial client) | Foreign-trade data arrived as scattered email reports | Python + n8n pipeline into PostgreSQL, star schema with DAX measures, Power BI dashboard | In production · 15 data-quality validations, 3-layer alerting, dead-man switch, 84 s end to end, incidents documented with root cause |
+| **Fleet repair log with AI receipt reading** (industrial client) | Repair costs were typed by hand into a years-old spreadsheet that depended on one person | Web app that reads repair receipts from a phone photo with a multimodal LLM, FastAPI + PostgreSQL, daily backups with tested restore | In production · 2,300+ automated tests, CI with gitleaks |
+| **Stock lookup without SAP** (industrial client) | Checking stock required a dedicated PC with SAP installed | Web app that queries ERP stock directly (FastAPI, HTMX) | Pilot deployed |
+| **SQL Trainer** — [sql.techcam.com.ar](https://sql.techcam.com.ar) | Getting interview-ready in SQL for data roles | PWA running real SQL in the browser (sql.js/WebAssembly), deterministic grading, AI tutor behind a FastAPI proxy with Argon2id and rate limits | In production · mutation-tested, 200+ documented decisions |
+| **Python Trainer** | Practicing Python with no server and no constant connection | Python in the browser (Pyodide in an isolated Web Worker), 14-concept curriculum, deterministic exam, installable offline PWA | In production · 91/91 functional and 17/17 non-functional requirements passing |
+| **AI nutrition assistant** (personal) | Logging meals and macros had too much friction | Telegram bot: one sentence → calories and macros via an LLM, guarded by deterministic validation and a fallback model; PWA dashboard behind Cloudflare Access | In daily use · 1,300+ tests · disabling model reasoning cut response time from 18.8 s to 9.6 s |
+
+Client systems are shown without names or business figures, and their code is private.
+
+## Public repos worth opening
+
+- [**pipeline-bi-calidad-datos**](https://github.com/Darkslidex/pipeline-bi-calidad-datos) — BI pipeline with a column contract, row-level Pydantic quarantine, star schema and a 12-rule DAMA data-quality audit (synthetic data).
+- [**DeepVision**](https://github.com/Darkslidex/DeepVision) — local computer-vision monitoring of operators (YOLO + pose): fatigue, phone use, abandonment and occupancy, with Telegram alerts. Prototype.
+- [**sentinel-ai**](https://github.com/Darkslidex/sentinel-ai) — computer-vision perimeter demo with polygon ROI and evidence capture, plus a fraud classifier (Random Forest + SMOTE). Demo.
+
+## Also built (private)
+
+- **Daily work organizer** — offline-first PWA with an AI coach and a finance module with an append-only audit log and inflation adjustment.
+- **B2B prospecting agent** — Claude Code with two custom MCP servers, deterministic scoring and human approval of every email via Telegram (archived).
+- **Multi-vertical CRM** — Next.js, TypeScript, Prisma and PostgreSQL with map views, plus an LLM contact-enrichment pipeline (decommissioned).
+- **Rental catalog backend** for a client — FastAPI with one test per business rule, Cloudflare Access, encryption at rest.
+- **Landing page network** — portal plus audience-specific sites with strict CSP and a lead backend (Fastify, PostgreSQL, AES-256).
+- **Claude Code skills & security hooks library** — DAMA data-quality audits, a read-only supervisor and a PreToolUse security hook, synced across three environments.
 
 ## Stack
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![n8n](https://img.shields.io/badge/-n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
+**Data:** Python (pandas, Pydantic), SQL (PostgreSQL, SQLite, MySQL), Power BI (DAX, Power Query), DAMA-DMBOK data quality
+**Automation & AI:** n8n, LLM APIs via OpenRouter, Claude Code, MCP servers
+**Backend & web:** FastAPI, SQLAlchemy, Alembic, PWA (Service Worker, IndexedDB), HTMX
+**Quality & ops:** pytest, Hypothesis, mutation testing, Playwright · Docker, Coolify, Linux, Cloudflare (Tunnel, Access) · gitleaks, pip-audit, Trivy
 
-## Casos de estudio
+## Contact
 
-| Proyecto | Problema | Solución | Resultado |
-|---|---|---|---|
-| **Entrenador de Python** | Practicar Python sin depender de un servidor ni de conexión constante | Motor Python en el navegador (Pyodide), currículo de 14 conceptos con desbloqueo progresivo, examen determinístico, PWA instalable y uso offline | Suite de pruebas en verde al 100 % (91/91 requisitos funcionales, 17/17 no funcionales) |
-| **Entrenador de SQL** — [sql.techcam.com.ar](https://sql.techcam.com.ar) | Llegar seguro a entrevistas técnicas de análisis de datos | App de práctica con repetición espaciada, tutor de IA y entorno MySQL real con 500.000+ filas sintéticas y defectos de datos sembrados a propósito | En producción; entorno de práctica a escala real sin usar datos de ningún cliente |
-| **Dashboard de cadena de suministro** | Visibilidad sobre datos de comercio exterior dispersos entre SAP y otro sistema de gestión | Pipeline Python/n8n hacia PostgreSQL, modelo en esquema estrella con medidas DAX, dashboard Power BI en producción | Cliente de comercio exterior e industria, activo desde 2026, con auditorías de calidad de datos recurrentes |
-| **App de stock sin depender de SAP** | Consultar stock obligaba a destinar una PC adicional solo para tener SAP instalado | App propia que consulta el stock sin pasar por una PC con SAP dedicada | En uso activo por el cliente |
-| **App de carga de facturas por foto** | Carga manual de facturas de reparaciones de una flota de vehículos | App que registra las facturas fotografiándolas desde el celular | Desplegada en producción para un cliente industrial |
-
-## Contacto
-
-[LinkedIn](https://linkedin.com/in/felix-lezama/) · [Portfolio](https://micv.techcam.com.ar)
+[LinkedIn](https://linkedin.com/in/felix-lezama/) · [Online CV](https://micv.techcam.com.ar)
