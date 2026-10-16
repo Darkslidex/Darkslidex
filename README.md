@@ -37,6 +37,7 @@ Client systems are shown without names or business figures, and their code is pr
 - **Rental catalog backend** for a client — FastAPI with one test per business rule, Cloudflare Access, encryption at rest.
 - **Landing page network** — portal plus audience-specific sites with strict CSP and a lead backend (Fastify, PostgreSQL, AES-256).
 - **Claude Code skills & security hooks library** — DAMA data-quality audits, a read-only supervisor and a PreToolUse security hook, synced across three environments.
+- **Generative AI video** — directed Ana, a consistent digital character, across 30 short videos (130+ clips with Google Veo and Gemini Omni), edited and adapted for TikTok and Meta Ads, with a documented prompt method for character and camera continuity.
 
 ## Stack
 
